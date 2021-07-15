@@ -1,0 +1,41 @@
+{
+    "name": "contractsniper",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scrape": "ts-node-dev src/scraper/index.ts",
+        "publish": "tsc && node ./dist/index.js",
+        "start": "tsc && pm2 start pm2.config.js && pm2 flush && pm2 logs",
+        "stop": "pm2 stop all",
+        "status": "pm2 list",
+        "restart": "npm run stop && npm run start"
+    },
+    "keywords": [
+        "Token sniper"
+    ],
+    "author": "Dennoh Peter",
+    "license": "MIT",
+    "dependencies": {
+        "@types/express": "^4.17.13",
+        "@types/node": "^16.3.1",
+        "@types/node-cron": "^2.0.4",
+        "@types/random-useragent": "^0.3.0",
+        "@types/selenium-webdriver": "^4.0.15",
+        "axios": "^0.21.1",
+        "chromedriver": "^91.0.1",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.13.2",
+        "node-cron": "^3.0.0",
+        "random-useragent": "^0.5.0",
+        "selenium-webdriver": "^4.0.0-beta.4",
+        "telegraf": "^4.4.0",
+        "ts-node-dev": "^1.1.8",
+        "typescript": "^4.3.5"
+    },
+    "engines": {
+        "node": "14.x"
+    }
+}
