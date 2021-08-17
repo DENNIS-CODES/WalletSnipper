@@ -15,7 +15,7 @@
     "keywords": [
         "Token sniper"
     ],
-    "author": "Dennoh Peter",
+    "author": "Dennoh Peter, Dennis Mwangi",
     "license": "MIT",
     "dependencies": {
         "@types/express": "^4.17.13",
